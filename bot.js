@@ -74,7 +74,7 @@ client.on('message', message => {
 
 
 
-if (command == "say" + "<@" + `${client.user.id}` + ">") {
+if (command == "say" +  `${client.user.id}` + ">") {
 let rank = message.guild.member(message.author).roles.find('name', '.');
 if (!rank) return message.reply(' ')
   message.channel.send(args.join("  "))
